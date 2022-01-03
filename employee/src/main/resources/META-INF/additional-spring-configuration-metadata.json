@@ -1,0 +1,27 @@
+{"properties": [
+  {
+    "name": "spring.datasource.link",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.link'"
+  },
+  {
+    "name": "spring.datasource.link",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.link'"
+  },
+  {
+    "name": "spring.datasource.link",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.link'"
+  },
+  {
+    "name": "spring.internetprotocaladdress",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.internetprotocaladdress'"
+  },
+  {
+    "name": "/",
+    "type": "java.lang.String",
+    "description": "A description for '/'"
+  }
+]}
