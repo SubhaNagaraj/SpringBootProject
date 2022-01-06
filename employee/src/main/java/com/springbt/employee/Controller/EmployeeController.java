@@ -32,7 +32,7 @@ public class EmployeeController {
 		return empolyeeService.insertRecords(employeeModel);
 	}
 
-	@GetMapping("/fi/{id}")
+	@GetMapping("/find/{id}")
 	public Optional<EmployeeModel> findbyid(@PathVariable Integer id) {
 		return empolyeeService.findRecords(id);
 		
