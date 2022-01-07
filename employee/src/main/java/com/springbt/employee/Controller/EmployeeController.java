@@ -22,7 +22,7 @@ public class EmployeeController {
 	@Autowired
 	private EmpolyeeService empolyeeService;
 
-	@GetMapping("/all")
+	@GetMapping("/al")
 	public List<EmployeeModel> all() {
 		return empolyeeService.findAllrecords();
 	}
