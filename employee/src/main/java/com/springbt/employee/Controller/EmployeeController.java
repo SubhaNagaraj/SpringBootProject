@@ -38,7 +38,7 @@ public class EmployeeController {
 		
 	}
 
-	@DeleteMapping("/d/{id}")
+	@DeleteMapping("/dlt/{id}")
 	public List<EmployeeModel> deletebyid(@PathVariable Integer id) {
 		return empolyeeService.deleteRecords(id);
 	}
