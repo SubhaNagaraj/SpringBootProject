@@ -27,7 +27,7 @@ public class EmployeeController {
 		return empolyeeService.findAllrecords();
 	}
 
-	@PostMapping("/ins")
+	@PostMapping("/insert")
 	public EmployeeModel insertRecords(@RequestBody EmployeeModel employeeModel) {
 		return empolyeeService.insertRecords(employeeModel);
 	}
