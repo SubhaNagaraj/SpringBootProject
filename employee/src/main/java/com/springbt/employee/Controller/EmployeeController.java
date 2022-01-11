@@ -22,12 +22,12 @@ public class EmployeeController {
 	@Autowired
 	private EmpolyeeService empolyeeService;
 
-	@GetMapping("/all")
+	@GetMapping("/al")
 	public List<EmployeeModel> all() {
 		return empolyeeService.findAllrecords();
 	}
 
-	@PostMapping("/ins")
+	@PostMapping("/insert")
 	public EmployeeModel insertRecords(@RequestBody EmployeeModel employeeModel) {
 		return empolyeeService.insertRecords(employeeModel);
 	}
@@ -38,7 +38,7 @@ public class EmployeeController {
 		
 	}
 
-	@DeleteMapping("/d/{id}")
+	@DeleteMapping("/dlt/{id}")
 	public List<EmployeeModel> deletebyid(@PathVariable Integer id) {
 		return empolyeeService.deleteRecords(id);
 	}
