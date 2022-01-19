@@ -2,7 +2,7 @@
 
 
 TIMESTAMP_FOLDER=$(date +%F-%T)
-PROJECT_DIR=/myagent/_work/2/s/employee/src/main/java/com/springbt/
+PROJECT_DIR=/myagent/_work/1/s/
 
 sudo rm -rf /myagent/scrunwork/deploy/
 sudo mkdir -p /myagent/scrunwork/deploy/
