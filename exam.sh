@@ -2,7 +2,7 @@
 
 
 TIMESTAMP_FOLDER=$(date +%F-%T)
-PROJECT_DIR=/myagent/_work/1/s/
+PROJECT_DIR=/myagent/_work/2/s/
 
 sudo rm -rf /myagent/scrunwork/deploy/
 sudo mkdir -p /myagent/scrunwork/deploy/
