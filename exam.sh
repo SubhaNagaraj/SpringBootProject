@@ -13,4 +13,7 @@ sudo cp -r $PROJECT_DIR/employee/target/employee-0.0.1-SNAPSHOT.war  /myagent/sc
 sudo cp -r $PROJECT_DIR/employee/target/employee-0.0.1-SNAPSHOT.war  /myagent/scrunwork/deploy/
 
 sudo kill -9 $(sudo lsof -t -i:8081)
-nohup java -jar /myagent/scrunwork/deploy/employee-0.0.1-SNAPSHOT.war & 
+# nohup java -jar /myagent/scrunwork/deploy/employee-0.0.1-SNAPSHOT.war & 
+kubectl delete all --all
+
+cd /myagent/_work/2/s/
