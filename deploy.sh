@@ -11,4 +11,4 @@ sudo docker push subha6867/employee:latest
 sudo kubectl delete all --all 
 
 cd ..
-kubectl apply -f deployment.yaml
+sudo kubectl apply -f deployment.yaml
