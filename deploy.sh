@@ -8,7 +8,3 @@ docker build -t subha6867/employee:latest .
 
 docker push subha6867/employee:latest
 
-kubectl delete all --all 
-
-cd ..
-kubectl apply -f deployment.yaml
