@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     app: demo
-  name: demo
+  name: {{ .Values.deployment.name }}
 spec:
   replicas: 1
   selector:
@@ -18,8 +18,8 @@ spec:
         app: demo
     spec:
       containers:
-      - image: subha6867/employee:latest
-        name: employee
+      - image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        name: {{ .Chart.Name }}
         resources: {}
 status: {}
 --- 
@@ -29,15 +29,16 @@ metadata:
   creationTimestamp: null
   labels:
     app: demo
-  name: demo
+  name: {{ .Values.service.name }}
 spec:
   ports:
   - name: 8081-8081
-    port: 8080
+    port: {{ .Values.service.port }}
+    nodePort: {{ .Values.service.nodePort }}
     protocol: TCP
-    targetPort: 8081
+    targetPort: {{ .Values.service.port }}
   selector:
     app: demo
-  type: ClusterIP
+  type: {{ .Values.service.port }}
 status:
   loadBalancer: {}
