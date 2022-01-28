@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: "subha6867/employee"
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+deployment:
+  name: employee
+  port: 8080
+
+service:
+  name: employee
+  type: NodePort
+  port: 8081
+  nodePort: 31000
