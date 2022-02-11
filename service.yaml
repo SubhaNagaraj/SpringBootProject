@@ -1,3 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: employee
+  name: employee
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: employee
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: employee
+    spec:
+      containers:
+      - image: subha6867/employee:latest
+        name: employee
+        resources: {}
+status: {}
+--- 
 apiVersion: v1
 kind: Service
 metadata:
@@ -6,7 +31,7 @@ spec:
   selector:
     app: employee
   ports:
-    - port: 80
+    - port: 8080
       targetPort: 8081
   externalTrafficPolicy: Local
   type: LoadBalancer
